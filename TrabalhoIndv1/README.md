@@ -4,7 +4,7 @@
 ![Figure](/TrabalhoIndv1/images/figure.png)
 
 ## Proposta
-O trabalho tem como objetivo a rasterização de linhas de cores interpoladas, manuseando bytes RGBA utilizando o algoritmo de Bresenham e aplicando modificações cabíveis para o funcionamento devido nos 8 octantes de um sistema de coordenadas, que foi criado com o intuito de possibilitar o desenho de linhas em dispositivos matriciais, em que basicamente ele utiliza de duas coordenadas, uma reta entre elas e vários pontos médios para ir definindo os pixeis que serão preenchidos na tela fazendo uso da aritmética dos inteiros e compondo a linha, no entanto tal algoritmo é apenas válido para o primeiro octante, ou seja apenas o desenho de linhas entre 0° a 45°.
+O trabalho tem como objetivo a rasterização de linhas de cores interpoladas, manuseando bytes RGBA utilizando o algoritmo de Bresenham e aplicando modificações cabíveis para o funcionamento devido nos 8 octantes de um sistema de coordenadas, algortimo esse, que foi criado com o intuito de possibilitar o desenho de linhas em dispositivos matriciais, em que basicamente ele utiliza de duas coordenadas, uma reta entre elas e vários pontos médios para ir definindo os pixeis que serão preenchidos na tela fazendo uso da aritmética dos inteiros e compondo a linha, no entanto tal algoritmo é apenas válido para o primeiro octante, ou seja apenas o desenho de linhas entre 0° a 45°.
 
 ## Introdução
 Na atividade foi requisitado 3 funções, uma que coloca um pixel na coordenada dada, uma que desenha uma linha utilizando o algoritmo modificado para os 8 octantes, e uma função que desenvolve um triângulo.
