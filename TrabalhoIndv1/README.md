@@ -10,7 +10,7 @@ O trabalho tem como objetivo a rasterização de linhas de cores interpoladas, m
 Na atividade foi requisitado 3 funções, uma que coloca um pixel na coordenada dada, uma que desenha uma linha utilizando o algoritmo modificado para os 8 octantes, e uma função que desenvolve um triângulo.
 
 ## Classes
-Foi feito 2 classes para o manuseamento facilitado de parâmentros e para uma melhor organização do código, a classe "vetor" que possui objetos que irão ser utilizados como coordenadas, com valores de x e y e a classe "cor" que possui objetos com valores inteiros para RGBA
+Foram feitas 2 classes para o manuseamento facilitado de parâmentros e para uma melhor organização do código, a classe "vetor" que possui objetos que irão ser utilizados como coordenadas, com valores de x e y e a classe "cor" que possui objetos com valores inteiros para RGBA
 
 ![Classes](/TrabalhoIndv1/images/classes.png)
 
