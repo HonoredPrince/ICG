@@ -25,20 +25,31 @@ Função que utiliza 5 chamadas em um laço da função PutPixel() para desenhar
 A função principal da atividade, ela que faz a rasterização de uma linha de cor interpolada utilizando o algoritmo de Bresenham modificado para existir o funcionamento nos 8 octantes, primeiro ela determina através de vários "if's" qual octante a coordenada passada pertence, para assim aplicar a simetria através das trocas de variáveis e inversões de sinais no eixo x e y.
 
 Octantes: tendo em mente a variação "Dx" e "Dy" no sistema e os valores das coordendas (x,y) 
+
 Obs: Quando |Dx| < |Dy|, ocorre a troca dos valores nos eixos, x recebe y, y recebe x.
 
 Para (Dx >= 0 e Dy >= 0): Octantes 0 e 1 (X positivo, Y posisivo)
+
 Octante 0: Dx >= Dy
+
 Octante 1: Dx < Dy
+
 Para (Dx >= 0 e Dy < 0): Octantes 7 e 6 (X positivo, Y negativo)
+
 Octante 7: Dx >= -Dy
+
 Octante 6: Dx < -Dy
 
 Para (Dx < 0 e Dy >= 0): Octantes 3 e 2 (X negativo, Y posisivo)
+
 Octante 3: -Dx >= Dy
+
 Octante 2: -Dx < Dy
+
 Para (Dx < 0 e Dy < 0): Octantes 4 e 5 (X negativo, Y negativo)
+
 Octante 4: -Dx >= -Dy
+
 Octante 5: -Dx < -Dy
 ![BDrawPt1]()
 
