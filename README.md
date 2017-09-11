@@ -11,14 +11,18 @@ Na atividade foi requisitado 3 funções, uma que coloca um pixel na coordenada 
 
 ## Classes
 Foi feito 2 classes para o manuseamento facilitado de parâmentros e para uma melhor organização do código, a classe "vetor" que possui objetos que irão ser utilizados como coordenadas, com valores de x e y e a classe "cor" que possui objetos com valores inteiros para RGBA
+
 ![Classes]()
 
 ## 1°Função - PutPixel()
 Foi a função de implementação mais simples, tem como parâmetro um objeto da classe "vetor" e outro da classe "cor", logo possuindo uma coordenada (x,y) e um padrão de cor.
 Funciona desta forma: para cada valor da coordenada x, anda-se 4 vezes na posição de memória para localizar o endereço do próximo pixel e para cada valor de y, anda-se o tamanho da resolução total multiplicada por 4 e pelo y, logo como os pixeis estão posicionados lado a lado, é feito o devido preenchimento do pixel na coordenada desejada.
+
 ![PutPixel]()
+
 ## DrawBox
 Função que utiliza 5 chamadas em um laço da função PutPixel() para desenhar um quadrado com uma diagonal.
+
 ![DrawBox]()
 
 ## 2° Funçao - BDrawMyLine()
@@ -51,6 +55,7 @@ Para (Dx < 0 e Dy < 0): Octantes 4 e 5 (X negativo, Y negativo)
 Octante 4: -Dx >= -Dy
 
 Octante 5: -Dx < -Dy
+
 ![BDrawPt1]()
 
 Após feita a simetria e armazenado os valores nas váriaveis temporárias, é feito o cálculo de todos os componentes do algoritmo de Bresenham e é feita a interpolação de cores, e depois começa o laço do algoritmo e dentro do laço, as coordenadas com os valores modificados após o processo simétrico, são colocadas de volta aos seus octantes originais através dos condicionais "if's", sendo um para cada octante.
