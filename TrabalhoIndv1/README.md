@@ -81,4 +81,6 @@ Logo, é evidente o funcionamento do algoritmo modificado, já que é desenhado 
 ## 3° Função - BDrawMyTriangle()
 Função de simples implementação, basicamente recebe como parâmetro 3 objetos da classe "vetor" e 3 objetos da classe "cor", que funcionam como 3 vértices de coordenadas(x,y) e cor(RGBA), assim é chamada 3 vezes a função BDrawMyLine() para desenhar as 3 linhas que irão compor o triângulo.
 
+![Triangulo](/TrabalhoIndv1/images/Triangulo.png)
+
 ![Triangulo](/TrabalhoIndv1/images/bdrawmytriangle.png)
