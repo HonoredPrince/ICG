@@ -61,7 +61,17 @@ A interpolação funciona da seguinte forma: é calculado a variação entre as 
 
 ![BDrawPt2]()
 
+- Checagem para o funcionamento do algoritmo para os 8 octantes
+
+Foi feito um teste chamando a função Checagem(), que através de um laço, faz o desenho de linhas no escopo do máximo de octantes possíveis, como na imagem abaixo:
+![Checagem]()
+
+Logo, é evidente o funcionamento do algoritmo modificado, já que é desenhado esse círculo que está dentro dos 8 octantes.
+
 ## 3° Função - BDrawMyTriangle()
+Função de simples implementação, basicamente recebe como parâmetro 3 objetos da classe "vetor" e 3 objetos da classe "cor", que funcionam como 3 vértices de coordenadas(x,y) e cor(RGBA), assim é chamada 3 vezes a função BDrawMyLine() para desenhar as 3 linhas que irão compor o triângulo.
+
+![Triangulo]()
 
 
 
