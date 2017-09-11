@@ -22,7 +22,7 @@ Função que utiliza 5 chamadas em um laço da função PutPixel() para desenhar
 ![DrawBox]()
 
 ## 2° Funçao - BDrawMyLine()
-A função principal da atividade, ela que faz a rasterização de uma linha de cor interpolada utilizando o algoritmo de Bresenham modificado para existir o funcionamento nos 8 octantes, primeiro ela determina através de vários "if's" qual octante a coordenada passada pertence, para assim aplicar a simetria através das trocas de variáveis e inversões de sinais no eixo x e y.
+A função principal da atividade, é ela que faz a rasterização de uma linha de cor interpolada utilizando o algoritmo de Bresenham modificado para existir o funcionamento nos 8 octantes, primeiro ela determina através de vários "if's" qual octante a coordenada dada pertence, para assim aplicar a simetria para o primeiro quadrante através das trocas de variáveis e inversões de sinais no eixo x e y, para depois calcular o que é preciso para se utilizar no algoritmo de Bresenham, fazer a interpolação de cores e transpor de volta para o primeiro octante com as trocas feitas e inversões de sinal devidas e assim aplicar o algoritmo.
 
 Octantes: tendo em mente a variação "Dx" e "Dy" no sistema e os valores das coordendas (x,y) 
 
@@ -52,6 +52,19 @@ Octante 4: -Dx >= -Dy
 
 Octante 5: -Dx < -Dy
 ![BDrawPt1]()
+
+Após feita a simetria e armazenado os valores nas váriaveis temporárias, é feito o cálculo de todos os componentes do algoritmo de Bresenham e é feita a interpolação de cores, e depois começa o laço do algoritmo e dentro do laço, as coordenadas com os valores modificados após o processo simétrico, são colocadas de volta aos seus octantes originais através dos condicionais "if's", sendo um para cada octante.
+
+- Interpolação - 
+
+A interpolação funciona da seguinte forma: é calculado a variação entre as cores finais e iniciais para cada componente de cor(RGBA), esse valor sendo dividido pelo total de pixels desenhados, assim, obtendo o valor de acréscimo em cada iteração no laço do algoritmo, logo, cada pixel tem seu valor devidamente atualizado para que a interpolação ocorra.
+
+![BDrawPt2]()
+
+
+
+
+
 
 
 
