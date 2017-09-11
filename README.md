@@ -61,6 +61,8 @@ A interpolação funciona da seguinte forma: é calculado a variação entre as 
 
 ![BDrawPt2]()
 
+## 3° Função - BDrawMyTriangle()
+
 
 
 
