@@ -23,7 +23,9 @@ Funciona desta forma: para cada valor da coordenada x, anda-se 4 vezes na posiç
 ## DrawBox
 Função que utiliza 5 chamadas em um laço da função PutPixel() para desenhar um quadrado com uma diagonal.
 
-![DrawBox]()
+![DrawBoxC]()
+
+![DrawBoxC]()
 
 ## 2° Funçao - BDrawMyLine()
 A função principal da atividade, é ela que faz a rasterização de uma linha de cor interpolada utilizando o algoritmo de Bresenham modificado para existir o funcionamento nos 8 octantes, primeiro ela determina através de vários "if's" qual octante a coordenada dada pertence, para assim aplicar a simetria para o primeiro quadrante através das trocas de variáveis e inversões de sinais no eixo x e y, para depois calcular o que é preciso para se utilizar no algoritmo de Bresenham, fazer a interpolação de cores e transpor de volta para o primeiro octante com as trocas feitas e inversões de sinal devidas e assim aplicar o algoritmo.
