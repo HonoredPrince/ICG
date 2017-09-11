@@ -1,7 +1,7 @@
 # Trabalho Individual 1
 
 # Rasterização de Linhas
-![Figure](/Trabalho Individual 1 - Rasterização/images/figure.png)
+![Figure](/Trabalho \Individual \1 \- \Rasterização/images/figure.png)
 
 ## Proposta
 O trabalho tem como objetivo a rasterização de linhas de cores interpoladas, manuseando bytes RGBA utilizando o algoritmo de Bresenham e aplicando modificações cabíveis para o funcionamento devido nos 8 octantes de um sistema de coordenadas, que foi criado com o intuito de possibilitar o desenho de linhas em dispositivos matriciais, em que basicamente ele utiliza de duas coordenadas, uma reta entre elas e vários pontos médios para ir definindo os pixeis que serão preenchidos na tela fazendo uso da aritmética dos inteiros e compondo a linha, no entanto tal algoritmo é apenas válido para o primeiro octante, ou seja apenas o desenho de linhas entre 0° a 45°.
