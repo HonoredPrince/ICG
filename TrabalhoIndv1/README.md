@@ -76,12 +76,12 @@ Após feita a simetria e armazenado os valores nas váriaveis temporárias, é f
 ![InterpolacaoIMG](/TrabalhoIndv1/images/interpolacaoIMG.png)
 
 ```c++
-  //Desenha duas figuras simétricas para demonstrar a interpolação 
-  for (unsigned int i = 0; i < 512 ; i++){
-		BDrawMyLine(vetor(i, 0), vetor(512, i), cor(255,0,0,255), cor(255,0,255,255));
+//Desenha duas figuras simétricas para demonstrar a interpolação 
+for (unsigned int i = 0; i < 512 ; i++){
+	BDrawMyLine(vetor(i, 0), vetor(512, i), cor(255,0,0,255), cor(255,0,255,255));
 	}
-	for (unsigned int i = 0; i < 512 ; i++){
-		BDrawMyLine(vetor(0, i), vetor(i, 512), cor(0,255,255,255), cor(0,0,255,255));
+for (unsigned int i = 0; i < 512 ; i++){
+	BDrawMyLine(vetor(0, i), vetor(i, 512), cor(0,255,255,255), cor(0,0,255,255));
 	}
 ```
 
