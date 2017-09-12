@@ -3,6 +3,15 @@
 # Rasterização de Linhas
 ![Figure](/TrabalhoIndv1/images/figure.png)
 
+```c++
+  //Desenha uma figura composta por triângulos 
+  BDrawMyTriangle(vetor(0,511), vetor(128,256), vetor(256, 511), cor(255,127,0,255), cor(0,255,255,255), cor(255,127,0,255));
+	BDrawMyTriangle(vetor(256,511), vetor(384,256), vetor(512, 511), cor(255,127,0,255), cor(0,255,255,255), cor(255,127,0,255));
+	BDrawMyTriangle(vetor(128,256), vetor(256,1), vetor(384,256), cor(255,127,0,255), cor(0,255,255,255), cor(255,127,0,255));	
+	BDrawMyTriangle(vetor(128,256), vetor(256,127), vetor(384,256), cor(255,127,0,255), cor(0,255,255,255), cor(255,127,0,255));
+	BDrawMyTriangle(vetor(128,256), vetor(256,383), vetor(384,256), cor(255,127,0,255), cor(0,255,255,255), cor(255,127,0,255))
+```
+
 ## Proposta
 O trabalho tem como objetivo a rasterização de linhas de cores interpoladas, manuseando bytes RGBA utilizando o algoritmo de Bresenham e aplicando modificações cabíveis para o funcionamento devido nos 8 octantes de um sistema de coordenadas, algortimo esse, que foi criado com o intuito de possibilitar o desenho de linhas em dispositivos matriciais, em que basicamente ele utiliza de duas coordenadas, uma reta entre elas e vários pontos médios para ir definindo os pixels que serão preenchidos na tela fazendo uso da aritmética dos inteiros, e compondo a linha, no entanto tal algoritmo é apenas válido para o primeiro octante, ou seja apenas o desenho de linhas entre 0° a 45°.
 
