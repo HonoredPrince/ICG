@@ -9,7 +9,7 @@
   BDrawMyTriangle(vetor(256,511), vetor(384,256), vetor(512, 511), cor(255,127,0,255), cor(0,255,255,255), cor(255,127,0,255));
   BDrawMyTriangle(vetor(128,256), vetor(256,1), vetor(384,256), cor(255,127,0,255), cor(0,255,255,255), cor(255,127,0,255));	
   BDrawMyTriangle(vetor(128,256), vetor(256,127), vetor(384,256), cor(255,127,0,255), cor(0,255,255,255), cor(255,127,0,255));
-  BDrawMyTriangle(vetor(128,256), vetor(256,383), vetor(384,256), cor(255,127,0,255), cor(0,255,255,255), cor(255,127,0,255))
+  BDrawMyTriangle(vetor(128,256), vetor(256,383), vetor(384,256), cor(255,127,0,255), cor(0,255,255,255), cor(255,127,0,255));
 ```
 
 ## Proposta
@@ -72,6 +72,18 @@ Octante 5: -Dx < -Dy
 Após feita a simetria e armazenado os valores nas váriaveis temporárias, é feito o cálculo de todos os componentes do algoritmo de Bresenham e é feita a interpolação de cores, e depois começa o laço do algoritmo e dentro do laço, as coordenadas com os valores modificados após o processo simétrico, são colocadas de volta aos seus octantes originais através dos condicionais "if's", sendo um para cada octante.
 
 - Interpolação:
+
+![InterpolacaoIMG]()
+
+```c++
+  //Desenha duas figuras simétricas para demonstrar a interpolação 
+  for (unsigned int i = 0; i < 512 ; i++){
+		BDrawMyLine(vetor(i, 0), vetor(512, i), cor(255,0,0,255), cor(255,0,255,255));
+	}
+	for (unsigned int i = 0; i < 512 ; i++){
+		BDrawMyLine(vetor(0, i), vetor(i, 512), cor(0,255,255,255), cor(0,0,255,255));
+	}
+```
 
 A interpolação funciona da seguinte forma: é calculado a variação entre as cores finais e iniciais para cada componente de cor(RGBA), esse valor sendo dividido pelo total de pixels desenhados, assim, obtendo o valor de acréscimo em cada iteração no laço do algoritmo, logo, cada pixel tem seu valor devidamente atualizado para que a interpolação ocorra.
 
