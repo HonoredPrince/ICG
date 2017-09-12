@@ -73,7 +73,7 @@ Após feita a simetria e armazenado os valores nas váriaveis temporárias, é f
 
 - Interpolação:
 
-![InterpolacaoIMG]()
+![InterpolacaoIMG](/TrabalhoIndv1/images/interpolacaoIMG)
 
 ```c++
   //Desenha duas figuras simétricas para demonstrar a interpolação 
