@@ -156,14 +156,14 @@ void BDrawMyLine(vetor vt1, vetor vt2, cor c1, cor c2)
 		}
 	}
 
-	//Bresenham: Variáveis e o método em si retirado do pŕoprio algortimo de Bresenham que desenha no primeiro octante que irá ser implementado ao lado das condições e modificações para o 		    		funcionamento nos 8 octantes
+	//Bresenham: Variáveis e o método em si retirado do pŕoprio algortimo de Bresenham que desenha no primeiro octante que irá ser implementado ao lado das condições e modificações para o funcionamento nos 8 octantes
 	float Dx = x2 - x1;
 	float Dy = y2 - y1;
 	float dm = Dy/Dx;
 	float m = 0;
 	int y =  y1;
 
-	//Interpolação de cor: é feita a diferença e é obtido essas variações que vão até o fim da linha, usa o Dx nas iterações pois no laço que vai criar a linha de pixeis a variação de ""x"" é usada como     		parâmentro do laço
+	//Interpolação de cor: é feita a diferença e é obtido essas variações que vão até o fim da linha, usa o Dx nas iterações pois no laço que vai criar a linha de pixeis a variação de ""x"" é usada como parâmentro do laço
 	cor c = c1;
 	float dr = (c2.r - c1.r) / Dx;
 	float dg = (c2.g - c1.g) / Dx;
